@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>TikkoX • Official Blockchain Network</title>
   <meta name="description" content="Official website of TikkoX Blockchain and TKOX currency. Explorer, Wallet, Pay platform, docs and roadmap." />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="icon" type="image/png" href="/assets/logo.png" />
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     :root{--bg:#000;--fg:#d4af37;--fg2:#b9992a;--card:#0b0b0b;--line:#151515}
     *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial}
@@ -31,9 +35,10 @@
     .muted{color:var(--fg2)}
     .badges{display:flex;gap:10px;flex-wrap:wrap}
     .badge{font-size:12px;border:1px solid var(--fg2);border-radius:999px;padding:6px 10px}
-    footer{border-top:1px solid var(--line);padding:30px 20px}
-    .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
-    ul{list-style:none;margin:0;padding:0} li{margin:6px 0}
+    footer{border-top:1px solid var(--line);padding:30px 20px;text-align:center}
+    .social{margin-top:20px;display:flex;justify-content:center;gap:14px}
+    .social a{width:36px;height:36px;border:1px solid var(--fg);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:.2s;font-size:16px}
+    .social a:hover{background:var(--fg);color:var(--bg)}
   </style>
 </head>
 <body>
@@ -42,7 +47,7 @@
   <div class="wrap">
     <nav>
       <div class="brand">
-        <img src="assets/TikkoX.png" alt="TikkoX logo">
+        <img src="/assets/logo.png" alt="TikkoX logo">
         <span>TikkoX</span>
       </div>
       <a href="#why">Why TikkoX</a>
@@ -51,8 +56,8 @@
       <a href="#developers">Developers</a>
       <a href="#community">Community</a>
       <div class="spacer"></div>
-      <a class="btn" href="https://explorer.tikkox.com">Launch Explorer</a>
-      <a class="btn ghost" href="https://wallet.tikkox.com">Create Wallet</a>
+      <a class="btn" href="https://explorer.tikkox.org">Launch Explorer</a>
+      <a class="btn ghost" href="https://wallet.tikkox.org">Create Wallet</a>
     </nav>
   </div>
 </header>
@@ -68,8 +73,8 @@
         Fast, secure and developer-friendly. Explore live data, create your wallet, and build real apps on a modern Substrate-based chain.
       </p>
       <div class="cta">
-        <a class="btn" href="https://explorer.tikkox.com">🚀 Explorer</a>
-        <a class="btn" href="https://wallet.tikkox.com">👛 Wallet</a>
+        <a class="btn" href="https://explorer.tikkox.org">🚀 Explorer</a>
+        <a class="btn" href="https://wallet.tikkox.org">👛 Wallet</a>
         <a class="btn ghost" href="https://github.com/tikkox">GitHub</a>
         <a class="btn ghost" href="roadmap.html">Roadmap</a>
       </div>
@@ -104,13 +109,13 @@
           <b>Explorer</b>
           <div class="badges"><span class="badge">Completed</span></div>
           <p class="muted">Search blocks, tx and accounts with live WebSocket updates.</p>
-          <a class="btn" href="https://explorer.tikkox.com">Open Explorer</a>
+          <a class="btn" href="https://explorer.tikkox.org">Open Explorer</a>
         </div>
         <div class="card">
           <b>Wallet</b>
           <div class="badges"><span class="badge">Completed</span></div>
           <p class="muted">Create/secure accounts, hold TKOX and future multi-asset support.</p>
-          <a class="btn" href="https://wallet.tikkox.com">Open Wallet</a>
+          <a class="btn" href="https://wallet.tikkox.org">Open Wallet</a>
         </div>
         <div class="card">
           <b>TikkoX Pay</b>
@@ -141,8 +146,8 @@
       <h2>Community</h2>
       <div class="grid">
         <a class="card" href="#"><b>Discord</b></a>
-        <a class="card" href="#"><b>Telegram</b></a>
-        <a class="card" href="#"><b>X (Twitter)</b></a>
+        <a class="card" href="https://t.me/tikkoxchain"><b>Telegram</b></a>
+        <a class="card" href="https://x.com/tikkox"><b>X (Twitter)</b></a>
         <a class="card" href="#"><b>Blog / News</b></a>
       </div>
       <p class="muted" style="margin-top:8px">Join for updates, rewards and developer programs.</p>
@@ -151,39 +156,15 @@
 </main>
 
 <footer>
-  <div class="wrap cols">
-    <div>
-      <h3>Products</h3>
-      <ul>
-        <li><a href="https://explorer.tikkox.com">Explorer</a></li>
-        <li><a href="https://wallet.tikkox.com">Wallet</a></li>
-        <li><a href="roadmap.html">TikkoX Pay</a></li>
-        <li><a href="roadmap.html">Bridge</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>Developers</h3>
-      <ul>
-        <li><a href="https://logo.org/docs">Docs</a></li>
-        <li><a href="#">API / RPC</a></li>
-        <li><a href="#">Status</a></li>
-        <li><a href="https://github.com/tikkox">GitHub</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>Network</h3>
-      <ul>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="#">Tokenomics</a></li>
-        <li><a href="#">Validators</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>Contact</h3>
-      <ul>
-        <li><a href="mailto:contact@tikkox.com">contact@tikkox.com</a></li>
-      </ul>
-      <p class="muted">© TikkoX Blockchain</p>
+  <div class="wrap">
+    <p>&copy; 2025 TikkoX Blockchain Network</p>
+    <div class="social">
+      <a href="https://github.com/tikkox" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/share/16o1MWaVbc" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/tikkox" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/tikkoxchain" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/tikkoxchain" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://www.tiktok.com/@tikkoxchain" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
   </div>
 </footer>
